@@ -11,9 +11,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['26553510'])
+API_HASH = environ['bff295e212736b4ddfd18230d6ee779a']
+BOT_TOKEN = environ['8485122049:AAGAU7p6hfAZgKQN2l3igrYib8jPM_zwPgo']
 
 # Bot settings
 WEB_SUPPORT = bool(environ.get("WEBHOOK", 'True')) # for web support on/off
@@ -32,8 +32,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URL = environ.get('mongodb+srv://bobby2606:bobby2606@bobby2606.d1sumy8.mongodb.net/?retryWrites=true&w=majority&appName=Bobby2606', "")
+DATABASE_NAME = environ.get('Bobby2606', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
